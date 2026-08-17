@@ -1,3 +1,7 @@
+<!--
+    Name: Sharon Babatunde
+    This is the HTML, which contains the structure and content for my portfolio website! 
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body id="home">
+    <!--Navigation Bar-->
     <nav>
         <button class="hamburger" id="hamburger">☰</button>
         <ul id="navMenu">
@@ -20,33 +25,26 @@
             <li><a href="#contact" class="nav-link">Contact</a></li>
             <button id="resumeBtn">Resume <i class="uil uil-file-alt"></i></button>
             
-
+            <!--Resume Pop-up Modal-->
             <div id="resumeModal" class="modal">
                 <div class="modal-content">
-                    <iframe 
-                        src="SharonsResume.pdf" 
-                        width="100%" 
-                        height="500px">
-                    </iframe>
+                    <iframe src="SharonsResume.pdf" width="100%" height="500px"></iframe>
                     <div class="modal-actions">
-                        <a href="SharonsResume.pdf" target="_blank" download class="download-btn">
-                            Download
-                        </a>
-                        <button id="closeModal" class="close-btn">
-                            Close
-                        </button>
+                        <a href="SharonsResume.pdf" target="_blank" download class="download-btn"> Download </a>
+                        <button id="closeModal" class="close-btn"> Close </button>
                     </div>
                 </div>
             </div>
         </ul>
     </nav>
+
+
+    <!--Title Page-->
     <section id="title" class="portfolio">
         <h3>Hi, I'm</h3>
         <h1>Sharon Babatunde</h1>
         <h4>Aspiring Developer | Problem Solver | Lifelong Learner</h4>
         <p>Welcome to my portfolio! Here is where I share my journey, the work I've created, and the skills I continue to develop along the way.</p>
-    <!--  Scroll type portfolio - add professional but decent photo of self either here 
-            or in the about section, thinking about section -->
         <div class="socials">
                         <a href="https://github.com/sharonbabatundee-cpu" target="_blank" class="social-icon" title="GitHub"><i class="uil uil-github-alt"></i></a>
                         <a href="https://www.linkedin.com/in/sharon-babatunde-669a55380" target="_blank" class="social-icon" title="LinkedIn"><i class="uil uil-linkedin-alt"></i></a>
@@ -54,7 +52,7 @@
         </div>
         <div class="floating-item item-1">
             <span>GPA</span>
-            <strong>3.7</strong>
+            <strong>3.71</strong>
         </div>
 
         <div class="floating-item item-2">
@@ -73,9 +71,11 @@
         </div>
     </section>
 
+
+    <!--About Me Page-->
     <section id="about" class="about-me">
         <div class="about-image">
-        <img src="images/profilepic.jpeg" alt="Profile picture">
+        <img src="images/profilepic1.jpeg" alt="Profile picture">
         </div>
 
         <div class="about-content">
@@ -102,7 +102,6 @@
                 </p>
             </div>
 
-
             <div id="skills-text" class="about-info">
                 <p><strong>Programming Languages:</strong></p>
                 <p>Python, Java, C, Haskell, MATLAB, JavaScript</p>
@@ -114,14 +113,11 @@
                 <p>Linux, Git, GitHub, Pygame</p>
             </div>
 
-
             <div id="experience-text" class="about-info">
                 <p><strong>IT Operations Support Assistant</strong></p>
                 <p>Legislative Assembly of Ontario, Toronto, ON</p>
                 <p>July 2026 - September 2026</p>
-
                 <br>
-
                 <p><strong>Wellness Program Coordinator</strong></p>
                 <p>Durham Community Health Centre, Oshawa, ON</p>
                 <p>June 2026 - July 2026</p>
@@ -130,8 +126,7 @@
     </section>
 
 
-
-    
+    <!--Projects Page-->
     <section id="projects" class="projects">
         <h2>Projects</h2>
 
@@ -178,8 +173,6 @@
                     event handling, state management, and dynamic DOM updates.
                 </p>
 
-    <!-- maybe replace this with something else like java, C or linux related cause this rlly wasnt good anyway-->
-
                 <div class="tech">
                     <span>JavaScript</span>
                     <span>HTML</span>
@@ -206,6 +199,8 @@
         </div>
     </section>
 
+
+    <!--Education Page-->
     <section id="education" class="education">
 
         <div class="education-container">
@@ -248,10 +243,10 @@
         </div>
     </section>
 
+    
+    <!--Contact Page-->
     <section id="contact" class="contact">
-
         <div class="contact-left">
-
             <h2>Let's <span>Connect!</span></h2>
             <p>
                 Whether you're reaching out about an opportunity,
@@ -270,9 +265,9 @@
                         linkedin.com/in/sharon-babatunde-669a55380
                     </a>
                 </p>
-                <p> <a href="tel:+6477743544" target="_blank"><i class="uil uil-phone"></i> (647) 774-3544
+                <p> <a href="tel:+6477743544" target="_blank"><i class="uil uil-phone"></i>
+                        (647) 774-3544
                     </a>
-                            
                 </p>
             </div>
         </div>
@@ -284,16 +279,14 @@
                     <input type="email" placeholder="Your Email" required>
                 </div>
                 <textarea
-                    placeholder="Your Message"
-                    rows="7"
-                    required></textarea>
-                <button type="submit">
-                    Send Message →
-                </button>
+                    placeholder="Your Message" rows="7" required></textarea>
+                <button type="submit"> Send Message → </button>
             </form>
         </div>
     </section>
 
+
+    <!--Footer-->
     <footer class="footer">
         <h3>Sharon Babatunde</h3>
         <p>© 2026 Sharon Babatunde. All rights reserved.</p>

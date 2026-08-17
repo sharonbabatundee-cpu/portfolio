@@ -1,3 +1,8 @@
+// Name: Sharon Babatunde
+// This is the JavaScript, which adds interactivity and dynamic functionality to my portfolio website!
+
+
+// About Me Navigation Bar
 function showSection(sectionId) {
     let sections = document.querySelectorAll(".about-info");
 
@@ -9,6 +14,7 @@ function showSection(sectionId) {
 }
 const links = document.querySelectorAll(".nav-link");
 
+//Navigation Bar Home Scroll
 window.onscroll = () => {
     let current = "home";
 
@@ -23,6 +29,8 @@ window.onscroll = () => {
         link.classList.toggle("active", link.hash === "#" + current)
     );
 };
+
+// Resume Modal
 const resumeBtn = document.getElementById("resumeBtn");
 const resumeModal = document.getElementById("resumeModal");
 const closeModal = document.getElementById("closeModal");
@@ -41,18 +49,20 @@ resumeModal.addEventListener("click", (e) => {
     }
 
 });
+
+// Hamburger Icon for Tablet and Mobile
 const hamburger = document.getElementById("hamburger");
 
 const navMenu = document.getElementById("navMenu");
 
 hamburger.addEventListener("click", () => {
-navMenu.classList.toggle("active");
+    navMenu.classList.toggle("active");
 
 });
 document.querySelectorAll("#navMenu .nav-link").forEach(link => {
 
-link.addEventListener("click", () => {
-navMenu.classList.remove("active");
-});
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
 
 });

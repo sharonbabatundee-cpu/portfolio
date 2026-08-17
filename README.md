@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website!
 
 ## Live Website
-[🔗 https://sharonbabatunde.github.io/portfolio](https://sharonbabatundee-cpu.github.io/portfolio/)
+🔗https://sharonbabatundee-cpu.github.io/portfolio
 
 ## About
 This portfolio showcases my projects, skills, education, and professional experience. It provides overview of my technical journey and highlights my interests in software development!

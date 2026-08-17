@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon's Portfolio </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Parisienne&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body id="home">
+    <nav>
+        <button class="hamburger" id="hamburger">☰</button>
+        <ul id="navMenu">
+            <li class="name">S.B</li>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <button id="resumeBtn">Resume <i class="uil uil-file-alt"></i></button>
+            
+
+            <div id="resumeModal" class="modal">
+                <div class="modal-content">
+                    <iframe 
+                        src="SharonsResume.pdf" 
+                        width="100%" 
+                        height="500px">
+                    </iframe>
+                    <div class="modal-actions">
+                        <a href="SharonsResume.pdf" target="_blank" download class="download-btn">
+                            Download
+                        </a>
+                        <button id="closeModal" class="close-btn">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <section id="title" class="portfolio">
+        <h3>Hi, I'm</h3>
+        <h1>Sharon Babatunde</h1>
+        <h4>Aspiring Developer | Problem Solver | Lifelong Learner</h4>
+        <p>Welcome to my portfolio! Here is where I share my journey, the work I've created, and the skills I continue to develop along the way.</p>
+    <!--  Scroll type portfolio - add professional but decent photo of self either here 
+            or in the about section, thinking about section -->
+        <div class="socials">
+                        <a href="https://github.com/sharonbabatundee-cpu" target="_blank" class="social-icon" title="GitHub"><i class="uil uil-github-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/sharon-babatunde-669a55380" target="_blank" class="social-icon" title="LinkedIn"><i class="uil uil-linkedin-alt"></i></a>
+                        <a href="mailto:sharonbabatundee@gmail.com" class="social-icon" title="Email"><i class="uil uil-envelope"></i></a>
+        </div>
+        <div class="floating-item item-1">
+            <span>GPA</span>
+            <strong>3.7</strong>
+        </div>
+
+        <div class="floating-item item-2">
+            <span>FIELD</span>
+            <strong>Computer Science</strong>
+        </div>
+
+        <div class="floating-item item-3">
+            <span>BASED IN</span>
+            <strong>Ontario, Canada</strong>
+        </div>
+
+        <div class="floating-item item-4">
+            <span>STATUS</span>
+            <strong>CO-OP Student</strong>
+        </div>
+    </section>
+
+    <section id="about" class="about-me">
+        <div class="about-image">
+        <img src="images/profilepic.jpeg" alt="Profile picture">
+        </div>
+
+        <div class="about-content">
+                <h2>About Me</h2>
+                <div class="line"> </div>
+
+            <div class="about-nav">
+                <button onclick="showSection('about-text')">About Me</button>
+                <button onclick="showSection('skills-text')">Skills</button>
+                <button onclick="showSection('experience-text')">Experience</button>
+            </div>
+
+            <div id="about-text" class="about-info active">
+                <p>
+                    I'm a motivated Computer Science student at McMaster University with a passion 
+                    for software development, problem-solving, and continuous learning. I enjoy 
+                    exploring web,  application,  and game development while building innovative 
+                    solutions and improving my skills.
+                </p>
+
+                <p>
+                    Outside of coding, I enjoy playing video games, exploring music, learning new 
+                    programming languages, networking, and working on personal projects!
+                </p>
+            </div>
+
+
+            <div id="skills-text" class="about-info">
+                <p><strong>Programming Languages:</strong></p>
+                <p>Python, Java, C, Haskell, MATLAB, JavaScript</p>
+
+                <p><strong>Web & Database Technologies:</strong></p>
+                <p>HTML, CSS, PHP</p>
+
+                <p><strong>Frameworks & Developer Tools:</strong></p>
+                <p>Linux, Git, GitHub, Pygame</p>
+            </div>
+
+
+            <div id="experience-text" class="about-info">
+                <p><strong>IT Operations Support Assistant</strong></p>
+                <p>Legislative Assembly of Ontario, Toronto, ON</p>
+                <p>July 2026 - September 2026</p>
+
+                <br>
+
+                <p><strong>Wellness Program Coordinator</strong></p>
+                <p>Durham Community Health Centre, Oshawa, ON</p>
+                <p>June 2026 - July 2026</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="images/memorymatch.jpeg" alt="Memory Match Game Screenshot">
+                <h3>Memory Match Web Application</h3>
+                <p>
+                    Developed a mobile-friendly Memory Match puzzle game using JavaScript,
+                    HTML, CSS, PHP, and SQL, implementing object-oriented game logic,
+                    dynamic DOM interactions, canvas-based animations, and localStorage.
+                </p>
+
+                <div class="tech">
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>PHP</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/flappybird.jpeg" alt="Flappy Bird Game Screenshot">
+                <h3>Flappy Bird Game</h3>
+                <p>
+                    Developed a Flappy Bird-style game using Python and Pygame,
+                    implementing collision detection, random obstacle generation,
+                    and scoring mechanics.
+                </p>
+
+                <div class="tech">
+                    <span>Python</span>
+                    <span>Pygame</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/coinclick.jpeg" alt="Coin Clicker Game Screenshot">
+                <h3>Coin Clicker Web Application</h3>
+                <p>
+                    Developed an incremental coin clicker game using JavaScript,
+                    event handling, state management, and dynamic DOM updates.
+                </p>
+
+    <!-- maybe replace this with something else like java, C or linux related cause this rlly wasnt good anyway-->
+
+                <div class="tech">
+                    <span>JavaScript</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/portfolio.png" alt="Portfolio Website Screenshot">
+                <h3>Portfolio Website</h3>
+                <p>
+                    Developed and deployed THIS responsive personal portfolio
+                    website using GitHub and Git for version control.
+                </p>
+
+                <div class="tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>GitHub</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="education">
+
+        <div class="education-container">
+
+            <h2>Education</h2>
+
+            <div class="line"></div>
+            <div class="education-content">
+                <div class="education-card">
+                    <img src="images/mcmaster.jpg" alt="McMaster University Photo">
+                    <h3>McMaster University</h3>
+                    <p><strong>Degree:</strong> Bachelor of Applied Science</p>
+                    <p><strong>Major:</strong> Computer Science I CO-OP</p>
+                    <p><strong>Expected Graduation:</strong> 2029</p>
+                    <p><strong>Current Year:</strong> Second Year</p>
+                </div>
+
+                <div class="coursework">
+                    <h3>Relevant Coursework</h3>
+
+                    <div class="course-list">
+
+                        <span>Software Development</span>
+                        <span>Data Structures & Algorithms</span>
+                        <span>Software Design</span>
+                        <span>Concurrent Systems</span>
+                        <span>Databases</span>
+                        <span>Web Development</span>
+                        <span>Discrete Mathematics</span>
+                        <span>Computer Architecture</span>
+                        <span>Logical Reasoning</span>
+                        <span>Automata and Computability</span>
+                        <span>Linear Algebra</span>
+                        <span>Computational Thinking</span>
+                        <span>Engineering Mathematics</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+
+        <div class="contact-left">
+
+            <h2>Let's <span>Connect!</span></h2>
+            <p>
+                Whether you're reaching out about an opportunity,
+                collaboration, networking, or just want to connect,
+                I'd love to hear from you! 
+            </p>
+            <div class="contact-info">
+                <p>
+                    <a href="mailto:sharonbabatundee@gmail.com"> <i class="uil uil-envelope"></i>  
+                        sharonbabatundee@gmail.com
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.linkedin.com/in/sharon-babatunde-669a55380"
+                        target="_blank"> <i class="uil uil-linkedin-alt"></i>  
+                        linkedin.com/in/sharon-babatunde-669a55380
+                    </a>
+                </p>
+                <p> <a href="tel:+6477743544" target="_blank"><i class="uil uil-phone"></i> (647) 774-3544
+                    </a>
+                            
+                </p>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <form>
+                <div class="input-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <textarea
+                    placeholder="Your Message"
+                    rows="7"
+                    required></textarea>
+                <button type="submit">
+                    Send Message →
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3>Sharon Babatunde</h3>
+        <p>© 2026 Sharon Babatunde. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
